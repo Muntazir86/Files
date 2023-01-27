@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2>Employee List</h2>
+                <div class="list-group">
+                    <div class="list-group-item" *ngFor="let emp of employeeList">
+                        <app-list-item [employee]="emp" (removeEmployee)="onDeleteEmployee($event)"></app-list-item>
+                    </div>
+                  </div>
+        </div>
+    </div>
+</div>
